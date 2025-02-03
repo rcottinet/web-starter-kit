@@ -19,28 +19,40 @@ Welcome to the **AdonisJS 6 + Inertia.js + ShadCN/UI Starter Kit**! This starter
 
 Follow these steps to get the starter kit up and running:
 
-### 1. Clone the repository
+### 1. Create a new AdonisJS project
 
-```bash
-git clone https://github.com/rcottinet/web-starter-kit.git
-cd web-starter-kit
+```
+npm init adonisjs@latest -- -K="rcottinet/web-starter-kit#develop"
 ```
 
-### 2. Install dependencies
+> Alternatively, you can clone the repository and install the dependencies manually:
+> ```bash
+> git clone https://github.com/rcottinet/web-starter-kit.git
+> cd web-starter-kit
+> ```
+> 
+> ```bash
+> npm install
+> ```
+> 
+> Copy the `.env.example` file to `.env` and adjust the environment variables as needed:
+> ```bash
+> cp .env.example .env
+> ```
 
-Run the following command to install both backend and frontend dependencies:
+### 2. Database
 
-```bash
-npm install
-```
+> The application has to connect to a database. Make sure to configure the database connection in the `.env` file.
+> To start a database server, you can use the following command:
+> ```bash
+> docker-compose up -d
+> ```
+> This will start a PostgreSQL database server on port 5432
+> You can then run the migrations using the following command:
+> ```bash
+> node ace migration:run
+> ```
 
-### 3. Configure environment variables
-
-Copy the `.env.example` file to `.env` and adjust the environment variables as needed:
-
-```bash
-cp .env.example .env
-```
 
 ### 4. Run the development server
 
