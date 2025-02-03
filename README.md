@@ -42,19 +42,21 @@ npm init adonisjs@latest -- -K="rcottinet/web-starter-kit#develop"
 
 ### 2. Database
 
-> The application has to connect to a database. Make sure to configure the database connection in the `.env` file.
-> To start a database server, you can use the following command:
-> ```bash
-> docker-compose up -d
-> ```
-> This will start a PostgreSQL database server on port 5432
-> You can then run the migrations using the following command:
-> ```bash
-> node ace migration:run
-> ```
+The application has to connect to a database. Make sure to configure the database connection in the `.env` file.
+To start a database server, you can use the following command:
 
+```bash
+docker-compose up -d
+```
 
-### 4. Run the development server
+This will start a PostgreSQL database server on port 5432
+You can then run the migrations using the following command:
+
+```bash
+node ace migration:run
+```
+
+### 3. Run the development server
 
 Start the application using the following command:
 
