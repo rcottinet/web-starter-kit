@@ -92,7 +92,7 @@ export function NavUser({
               </DropdownMenuItem>
             </DropdownMenuGroup>
             <DropdownMenuSeparator />
-            <Link href="/logout" method="post">
+            <Link href="/auth/logout" method="post">
               <DropdownMenuItem className="cursor-pointer">
                 <LogOut />
                 Log out
